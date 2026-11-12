@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>2027 Life Planner · Setup help · PixalPetalCo</title>
+<meta name="description" content="Quick setup help for the PixalPetalCo 2027 Life Planner: import into GoodNotes, Notability, Noteshelf or Xodo, fix links, add stickers.">
+<meta name="theme-color" content="#27402F">
+<meta name="robots" content="noindex">
+<link rel="icon" href="../icon-192.png"><link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<style>
+@font-face{font-family:"Newsreader";font-weight:200 800;font-style:normal;font-display:swap;src:url(fonts/newsreader-latin-opsz-normal.woff2) format("woff2")}
+@font-face{font-family:"Newsreader";font-weight:200 800;font-style:italic;font-display:swap;src:url(fonts/newsreader-latin-opsz-italic.woff2) format("woff2")}
+@font-face{font-family:"Inter";font-weight:400;font-display:swap;src:url(fonts/inter-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Inter";font-weight:600;font-display:swap;src:url(fonts/inter-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"Inter";font-weight:700;font-display:swap;src:url(fonts/inter-latin-700-normal.woff2) format("woff2")}
+:root{--forest:#27402F;--forest2:#2F4A3B;--gold:#B08D57;--goldD:#8A6425;--ink:#1E2420;--body:#3A423B;--mut:#6B7568;--line:#E4DECE;--bg:#FCFAF5;--sage:#E6ECDE;--sage2:#F1F5EA;--sand:#F3EEE1}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--body);font:400 16px/1.6 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px 56px}
+header{background:var(--forest);color:#F7F2E7;padding:26px 20px 34px}
+header .in{max-width:760px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:12px;margin-bottom:22px}
+.mk{width:40px;height:40px;border-radius:11px;background:#F3EBDD;display:grid;place-items:center;color:var(--forest)}
+.mk svg{width:24px;height:24px}
+.brand b{font:500 24px/1 Newsreader,Georgia,serif;letter-spacing:-.01em}
+.brand b em{font-style:italic;font-weight:400;color:#E9C98F}
+.brand small{display:block;font:600 10px/1 Inter;letter-spacing:.24em;color:#CFD9C9;margin-top:5px}
+h1{font:400 40px/1.05 Newsreader,Georgia,serif;letter-spacing:-.02em}
+h1 em{font-style:italic;color:#E9C98F}
+header p{margin-top:12px;color:#DDE6D3;font-size:17px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.chips a{display:inline-block;padding:8px 14px;border-radius:99px;background:rgba(255,255,255,.12);color:#F7F2E7;font:600 13px/1 Inter;text-decoration:none;border:1px solid rgba(233,201,143,.4)}
+h2{font:400 28px/1.15 Newsreader,Georgia,serif;color:var(--ink);letter-spacing:-.015em;margin:38px 0 6px}
+h2 em{font-style:italic;color:var(--forest2)}
+.eb{font:700 11px/1 Inter;letter-spacing:.22em;color:var(--goldD);margin-top:38px}
+.eb+h2{margin-top:8px}
+p{margin:8px 0}
+.card{background:#fff;border:1.5px solid var(--line);border-radius:18px;padding:18px 18px;margin:12px 0}
+.card.g{background:var(--sage2);border-color:#D2DDC6}
+.card.s{background:var(--sand)}
+ol,ul{padding-left:22px;margin:8px 0}
+li{margin:6px 0}
+details{background:#fff;border:1.5px solid var(--line);border-radius:16px;margin:10px 0;overflow:hidden}
+summary{cursor:pointer;list-style:none;padding:16px 18px;font:600 17px/1.3 Inter;color:var(--ink);display:flex;align-items:center;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";margin-left:auto;font:600 22px/1 Inter;color:var(--goldD)}
+details[open] summary::after{content:"–"}
+details[open]{border-color:#C9D6BC}
+details .b{padding:0 18px 16px}
+.av{width:34px;height:34px;border-radius:50%;background:var(--forest);color:#F7F2E7;display:grid;place-items:center;font:600 18px/1 Newsreader,Georgia,serif;flex:none}
+.tip{border-left:4px solid var(--gold);padding:8px 14px;background:#FBF6E9;border-radius:0 12px 12px 0;margin:12px 0;font-size:15px}
+.btn{display:inline-block;margin-top:10px;padding:13px 22px;border-radius:99px;background:var(--forest);color:#F7F2E7;font:600 15px/1 Inter;text-decoration:none}
+footer{border-top:1px solid var(--line);margin-top:44px;padding-top:20px;color:var(--mut);font-size:13px;text-align:center}
+.lead{font:400 22px/1.4 Newsreader,Georgia,serif;color:var(--forest2)}
+kbd{font:600 13px/1 Inter;background:var(--sage);border:1px solid #CFDAC3;border-radius:7px;padding:3px 8px;white-space:nowrap}
+@media (max-width:520px){h1{font-size:34px}h2{font-size:25px}}
+</style>
+</head>
+<body>
+<header><div class="in">
+  <div class="brand"><div class="mk"><svg viewBox="0 0 68 68" aria-hidden="true"><g fill="currentColor"><path d="M4 18A14 14 0 0 1 18 4A14 14 0 0 1 32 18V32H18A14 14 0 0 1 4 18Z"/><path d="M36 18A14 14 0 0 1 50 4A14 14 0 0 1 64 18A14 14 0 0 1 50 32H36Z"/><path d="M4 50A14 14 0 0 1 18 36H32V50A14 14 0 0 1 18 64A14 14 0 0 1 4 50Z"/></g><path fill="#B08D57" d="M36 36H50A14 14 0 0 1 64 50A14 14 0 0 1 50 64A14 14 0 0 1 36 50Z"/></svg></div><div><b>PixalPetal<em>Co</em></b><small>2027 LIFE PLANNER</small></div></div>
+  <h1>Welcome! Let’s get your <em>planner</em> ready.</h1>
+  <p>It takes about 2 minutes. Pick what you need below.</p>
+  <div class="chips"><a href="#import">Import</a><a href="#links">Links not opening?</a><a href="#stickers">Stickers</a><a href="#tasks">Tasks &amp; challenges</a><a href="#faq">FAQ</a></div>
+</div></header>
+<main class="wrap">
+
+<div class="eb">STEP 1</div><h2>Download your <em>files</em></h2>
+<div class="card g"><ol>
+<li>On Etsy open <b>You → Purchases</b>, find your order and tap <b>Download files</b>.</li>
+<li>Find them in your <b>Files</b> app → <b>Downloads</b> (iPad / iPhone), or your <b>Downloads</b> folder.</li>
+<li>Tap <b>Sticker Book.zip</b> once to unzip it. The planner PDFs do <b>not</b> need unzipping.</li>
+</ol></div>
+
+<div class="eb">STEP 2</div><h2>Choose <em>one</em> planner</h2>
+<div class="card"><p><b>Monday start</b> or <b>Sunday start</b>: the pages are identical, only the first day of the week differs. Import the one you prefer and use it all year.</p></div>
+
+<div class="eb" id="import">STEP 3</div><h2>Import into <em>your app</em></h2>
+<details open><summary><span class="av">G</span>GoodNotes <small style="font-weight:400;color:var(--mut)">iPad · iPhone · Mac</small></summary><div class="b"><ol>
+<li>Open the <b>Files</b> app and tap the planner PDF.</li>
+<li>Tap <b>Share → GoodNotes</b> (or in GoodNotes tap <b>+ → Import</b>).</li>
+<li>Choose <b>Import as new document</b>, open it and tap <b>HOME</b>.</li></ol></div></details>
+<details><summary><span class="av">N</span>Notability <small style="font-weight:400;color:var(--mut)">iPad · iPhone · Mac</small></summary><div class="b"><ol>
+<li>Open Notability and tap the <b>+</b> button.</li>
+<li>Tap <b>Import</b> and choose the planner PDF from Files.</li>
+<li>Open the new note and tap <b>HOME</b>.</li></ol></div></details>
+<details><summary><span class="av">N</span>Noteshelf <small style="font-weight:400;color:var(--mut)">iPad · Android tablets</small></summary><div class="b"><ol>
+<li>Open Noteshelf and tap <b>+</b> (or <b>Import</b>).</li>
+<li>Choose the planner PDF from your Files / Downloads.</li>
+<li>Open it and tap <b>HOME</b>.</li></ol></div></details>
+<details><summary><span class="av">X</span>Xodo <small style="font-weight:400;color:var(--mut)">Android · iPad · Windows</small></summary><div class="b"><ol>
+<li>Open Xodo and tap the planner PDF in Files.</li>
+<li>Turn on reading / link mode if a tap draws a mark.</li>
+<li>Tap <b>HOME</b> and enjoy your planner.</li></ol></div></details>
+<p class="tip">App menus change a little between versions. If a button has a different name, look for <b>Import</b> or <b>Open PDF</b>. Any PDF app that supports hyperlinks works. You need a note-taking / PDF-annotation app to write on the pages.</p>
+
+<div class="eb" id="links">IMPORTANT</div><h2>Links <em>not opening?</em></h2>
+<p>Quick test: tap <kbd>HOME</kbd> → tap <kbd>MAR</kbd> at the top → tap a date → tap <kbd>HOME</kbd> again.</p>
+<details open><summary>If a tap draws a dot instead of jumping</summary><div class="b"><p>Your pen is catching the tap. Switch to <b>Reading (read-only) mode</b> (in GoodNotes: the pen icon with a line through it), or tap links with your <b>finger</b> and set Apple Pencil to draw only.</p></div></details>
+<details><summary>Still nothing?</summary><div class="b"><p>Press and hold the link. If you see <b>Open link</b>, tap it. Then update your app to the newest version.</p></div></details>
+<details><summary>Re-import cleanly</summary><div class="b"><p>Delete the planner from the app, save the PDF to <b>Files</b> (not a cloud preview) and import it again.</p></div></details>
+<details><summary>Keep the page order</summary><div class="b"><p>Links jump to page positions, so please don’t re-order pages. If you delete pages you don’t need, links to those pages will stop working.</p></div></details>
+
+<div class="eb" id="stickers">STICKER BOOK</div><h2>Add <em>stickers</em> &amp; widgets</h2>
+<div class="card"><ol>
+<li>Unzip <b>Sticker Book.zip</b>. Stickers are sorted into folders (medals, washi tape, sticky notes, labels, icons, flowers, widgets…).</li>
+<li>In your app tap <b>+ → Photos / Image</b> (or drag from Files) and choose a PNG. The backgrounds are transparent.</li>
+<li>Pinch to resize, drag to move, copy &amp; paste to reuse. Drop widgets into the dashed <b>INSERT ZONES</b> on week pages.</li></ol></div>
+
+<div class="eb" id="tasks">TASKS &amp; CHALLENGES</div><h2>Make it <em>stick</em></h2>
+<div class="card s"><p class="lead">The 3-minute task routine</p><ol>
+<li><b>Brain dump</b> into the dotted box on the Task Hub.</li>
+<li><b>Sort</b> into Quick wins, Today’s focus and Big projects.</li>
+<li><b>Pick your top 3</b> on today’s Day page.</li>
+<li><b>Tick &amp; reward:</b> tick tasks, stick a DONE sticker, enjoy your reward.</li></ol>
+<p class="lead" style="margin-top:14px">Challenges</p>
+<p>Open the <b>Challenge Hub</b>, pick one of 12 trackers (7, 14, 21 or 30 days), colour one circle a day, and stick a medal at each milestone. <b>Never miss twice</b>: if you skip a day, just colour the next one.</p></div>
+
+<div class="eb" id="faq">FAQ</div><h2>Good <em>to know</em></h2>
+<details><summary>Can I print it?</summary><div class="b"><p>It is made for digital use on a tablet. You can print pages for yourself, but it is not set up as a printable planner.</p></div></details>
+<details><summary>Can I use it on my phone?</summary><div class="b"><p>Yes, to view and tap around. Writing is easiest on a tablet with a stylus.</p></div></details>
+<details><summary>Can I use it on more than one device?</summary><div class="b"><p>Yes, on all of your own devices. It is for personal use only. Please don’t share, resell or upload the files.</p></div></details>
+<details><summary>I still need help</summary><div class="b"><p>Message me on Etsy. I am happy to help.</p></div></details>
+
+<footer>Made with care by <b>Kajal</b> · PixalPetalCo<br>Personal use only · Digital download, nothing is shipped</footer>
+</main>
+</body>
+</html>
