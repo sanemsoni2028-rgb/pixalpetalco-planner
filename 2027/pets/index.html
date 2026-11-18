@@ -443,8 +443,9 @@ details.more{border:1px solid var(--line);border-radius:14px;padding:10px 14px 4
 .th1{display:flex;align-items:center;gap:20px}.th1 .rm small{display:block;font:700 11px/1 var(--sans);letter-spacing:.16em;color:var(--mut)}.th1 .big{display:block;font:600 32px/1.1 var(--serif);margin-top:6px;letter-spacing:-.01em}.th1 p{color:var(--body);margin-top:6px;font-size:14px}
 .th2{display:flex;flex-direction:column;gap:14px;align-items:flex-end}.lvlc{display:flex;align-items:center;gap:10px;text-align:left}.lvlc b{display:block;font-size:14px}.lvlc small{color:var(--mut);font-size:12px}
 .qact{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
-.tjar .jarrow{display:grid;grid-template-columns:repeat(10,1fr);gap:4px;margin:8px 0 12px}
-.tj{aspect-ratio:1;border-radius:12px;display:grid;place-items:center;background:var(--card2);border:1.5px dashed var(--line2);transition:transform .2s;--es:28px}
+@media (min-width:901px) and (max-width:1240px){.thero{grid-template-columns:1fr}.th2{align-items:flex-start;width:100%}.qact{justify-content:flex-start}}
+.tjar .jarrow{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:4px;margin:8px 0 12px}
+.tj{aspect-ratio:1;border-radius:12px;display:grid;place-items:center;background:var(--card2);border:1.5px dashed var(--line2);transition:transform .2s;--es:clamp(16px,1.9vw,28px);overflow:hidden}
 .tj .em{filter:grayscale(1) opacity(.38)}.tj.on{border-style:solid;border-color:color-mix(in srgb,var(--gold) 55%,var(--line));background:color-mix(in srgb,var(--gold) 14%,var(--card))}.tj.on .em{filter:none}
 .bday{display:flex;align-items:center;gap:14px;padding:16px 20px;background:linear-gradient(90deg,color-mix(in srgb,var(--pc,var(--acc)) 20%,var(--card)),var(--card))}.bday b{display:block;font:600 19px var(--serif)}.bday small{color:var(--body);font-size:13.5px}
 .pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:18px}.pgrid .card+.card{margin-top:0}
@@ -540,6 +541,8 @@ details.more{border:1px solid var(--line);border-radius:14px;padding:10px 14px 4
 @media (prefers-reduced-motion:reduce){.pav .em{animation:none}}
 
 .icb.sndb.off{opacity:.55}
+
+.wgrid .chip,.wday .chip{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:inline-block;vertical-align:top}
 </style>
 </head>
 <body>
